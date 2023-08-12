@@ -1,0 +1,34 @@
+#gameWrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family:'Courier New', Courier, monospace;
+}
+#buttonWrapper{
+    display: contents;
+}
+#counterWrapper{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    text-align: center;
+}
+#storeWrapper{
+    grid-column-start: 4;
+}
+#button{
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin: 0 auto 0 auto;
+    border-radius: 100% 100% 100% 100%;
+    background-color: rgb(211, 27, 27);
+}
+#buttonLevel{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+}
