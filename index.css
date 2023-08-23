@@ -1,3 +1,6 @@
+p {
+    margin: .5rem 0 .5rem 0;
+}
 #gameWrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -9,25 +12,39 @@
 #counterWrapper{
     grid-column-start: 2;
     grid-column-end: 4;
-    grid-row-start: 1;
+    grid-row-end: 1;
     text-align: center;
 }
 #storeWrapper{
+    display: contents;
     grid-column-start: 4;
+}
+#storeWrapper .sectionTitle{
+    grid-column-start: 4;
+}
+.item{
+    grid-column-start: 4;
+    min-height: 100px;
+    margin-bottom: 1rem;
+}
+.itemPic{
+    height:50px;
+    width:50px;
+    border-style: solid;
 }
 #button{
     height: 100px;
     width: 100px;
     border-style: solid;
-    grid-row-start: 2;
+    grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 4;
-    margin: 0 auto 0 auto;
+    margin: 2rem auto 0 auto;
     border-radius: 100% 100% 100% 100%;
     background-color: rgb(211, 27, 27);
 }
 #buttonLevel{
-    grid-row-start: 3;
+    grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 4;
     text-align: center;
